@@ -1,0 +1,916 @@
+@media (max-width: 360px){
+    
+    body{/*VERSION MOBILE*/
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-size: 28px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 24px;
+}
+
+#SpanNomNav{
+    color: darkorange;
+}
+
+#SpanNomIntro{
+    color: black;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 7px dotted black;
+    width: 160px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h3::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    background-color: darkred;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -74px;
+}
+
+h3::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    display: block;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: -60px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionHeader{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 25px 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    padding : 0; /* pas de marge intérieure */
+    margin : 0; /* ni extérieure */
+    list-style : none; /* on supprime le style par défaut de la liste */
+    line-height : 21px; /* on définit une hauteur pour chaque élément */
+    text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+nav li {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+nav li{
+    padding-left: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 1s all;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #d0740a;
+}
+
+article{
+    width: 100%;
+    margin: auto;
+}
+
+.fondOrange{
+    width: 100%;
+    background-color: #d0740a;    
+}
+
+#BlocIntro{
+    width: 80%;
+/*    height: 170px;*/
+    margin: 0 auto;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#photoIntro{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+#texteIntro{
+    width: 500px;
+    height: 150px;
+    font-size: 11px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+#pPresentation{
+    margin-top: 0;
+    overflow: auto;
+    height: 100px;
+}
+    
+p{      
+    margin-top: 0;
+    text-align: justify;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#BlocPortfolio{
+    width: 80%;
+    margin: auto;
+    margin: right;
+}
+
+#imagesPortfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 0; /*pour les enfants donc IMG*/
+}
+
+#imagesPortfolio img{
+    margin: 5px;
+    width: 250;
+    height: 150px;
+}
+
+#BlocAbout{
+    width: 100%;
+    margin: auto;
+    margin: right;
+    background-color: #d0740a;
+}
+
+.columns{
+    width: 80%;
+    margin: auto;
+    margin: right;
+}
+
+#boutonCV{
+    width: 80px;
+    height: 30px;
+    background-color: #d0740a;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin : auto;
+    transition: 1s all;
+    color: white;
+    text-align: center;
+}
+#boutonCV:hover{
+    background-color: white;
+    color: #d0740a;
+}
+
+.fa {
+    color: white;
+}
+
+.fa:hover{
+    color: #d0740a;
+/*FONCTIONNE sur chromes mais PAS sur firefox A CHERCHER*/
+}
+
+#positionFormulaire{
+    width: 80%;
+    height: 420px;
+    margin: 0 auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; /*modification ici*/
+}
+
+#TROISinputs{
+    padding: 0; /*modif faite ici*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto; /*modif faite ici*/
+}
+
+#UNinput{
+    align-content: center;
+/*    padding-left: 10px;*/
+    margin-left: auto; /*modif faite ici*/
+    margin-right: auto;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+textarea{
+    width: 200px;
+    height: 160px;
+    border: none;
+    background-color: #cccccc;
+    margin-left: 0px;
+    margin: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#boutonSubmit{
+    width: 80px;
+    height: 30px;
+    background-color: none;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    display: block;
+    margin : auto;
+    transition: 1s all;
+}
+#boutonSubmit:hover{
+    background-color: darkorange;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionFooter{
+    width: 80%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#positionContact{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    margin: 10px;
+}
+
+#copyright{
+    text-align: center;
+    padding: 30px;
+}
+}
+@media (min-width: 361px) and (max-width: 720px) { /*VERSION TABLETTE*/
+    body{
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-size: 28px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 24px;
+}
+
+#SpanNomNav{
+    color: darkorange;
+}
+
+#SpanNomIntro{
+    color: black;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 7px dotted black;
+    width: 160px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h3::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    background-color: darkred;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -74px;
+}
+
+h3::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    display: block;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: -60px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionHeader{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 25px 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    padding : 0; /* pas de marge intérieure */
+    margin : 0; /* ni extérieure */
+    list-style : none; /* on supprime le style par défaut de la liste */
+    line-height : 21px; /* on définit une hauteur pour chaque élément */
+    text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+nav li {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+nav li{
+    padding-left: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 1s all;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #d0740a;
+}
+
+article{
+    width: 100%;
+    margin: auto;
+}
+
+.fondOrange{
+    width: 100%;
+    background-color: #d0740a;    
+}
+
+#BlocIntro{
+    width: 80%;
+/*    height: 170px;*/
+    margin: 0 auto;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#photoIntro{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+#texteIntro{
+    width: 500px;
+    height: 150px;
+    font-size: 11px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+#pPresentation{
+    margin-top: 0;
+    overflow: auto;
+    height: 100px;
+}
+    
+p{      
+    margin-top: 0;
+    text-align: justify;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#BlocPortfolio{
+    width: 80%;
+    margin: auto;
+    margin: right;
+}
+
+#imagesPortfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 0; /*pour les enfants donc IMG*/
+}
+
+#imagesPortfolio img{
+    margin: 5px;
+    width: 250;
+    height: 150px;
+}
+
+#BlocAbout{
+    width: 100%;
+    margin: auto;
+    margin: right;
+    background-color: #d0740a;
+}
+
+.columns{
+    width: 80%;
+    margin: auto;
+    margin: right;
+}
+
+#boutonCV{
+    width: 80px;
+    height: 30px;
+    background-color: #d0740a;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin : auto;
+    transition: 1s all;
+    color: white;
+    text-align: center;
+}
+#boutonCV:hover{
+    background-color: white;
+    color: #d0740a;
+}
+
+.fa {
+    color: white;
+}
+
+.fa:hover{
+    color: #d0740a;
+/*FONCTIONNE sur chromes mais PAS sur firefox A CHERCHER*/
+}
+
+#positionFormulaire{
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; /*modification ici*/
+}
+
+#TROISinputs{
+    padding: 0; /*modif faite ici*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto; /*modif faite ici*/
+}
+
+#UNinput{
+    align-content: center;
+/*    padding-left: 10px;*/
+    margin-left: auto; /*modif faite ici*/
+    margin-right: auto;
+}
+
+input{
+    width: 274px;
+    height: 40px;
+    border: none;
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+textarea{
+    width: 274px;
+    height: 200px;
+    border: none;
+    background-color: #cccccc;
+    margin-left: 0px;
+        margin: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#boutonSubmit{
+    width: 80px;
+    height: 30px;
+    background-color: none;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    display: block;
+    margin : auto;
+    transition: 1s all;
+}
+#boutonSubmit:hover{
+    background-color: darkorange;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionFooter{
+    width: 80%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#positionContact{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    margin: 10px;
+}
+
+#copyright{
+    text-align: center;
+    padding: 30px;
+}
+}
+
+@media (min-width: 721px){ /*VERSION DESKTOP*/
+body{
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 29px;
+}
+
+#SpanNomNav{
+    color: darkorange;
+}
+
+#SpanNomIntro{
+    color: black;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 7px dotted black;
+    width: 160px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h3::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    background-color: darkred;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -74px;
+}
+
+h3::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    display: block;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: -50px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionHeader{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 25px 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+nav li{
+    padding-left: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 1s all;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #d0740a;
+}
+
+article{
+    width: 100%;
+    margin: auto;
+}
+
+.fondOrange{
+    width: 100%;
+    background-color: #d0740a;    
+}
+
+#BlocIntro{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#photoIntro{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+#texteIntro{
+    width: 500px;
+    height: 320px;
+    padding-left: 30px;
+}
+
+p{
+    margin-top: 0;
+}
+
+#BlocPortfolio{
+    width: 80%;
+    margin: auto;
+    margin: right;
+}
+
+#imagesPortfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 0; /*pour les enfants donc IMG*/
+}
+
+#imagesPortfolio img{
+    margin: 5px;
+}
+
+#BlocAbout{
+    width: 100%;
+    margin: auto;
+    margin: right;
+    background-color: #d0740a;
+}
+
+
+.columns{
+    column-width: 150px;
+    height: 300px;
+    column-count: 2;
+    column-gap: 30px;
+    column-fill: auto;
+/*    column-rule: 2px solid darkred;*/
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 0px;
+}
+
+#boutonCV{
+    width: 80px;
+    height: 30px;
+    background-color: #d0740a;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin : auto;
+    transition: 1s all;
+    color: white;
+    text-align: center;
+}
+#boutonCV:hover{
+    background-color: white;
+    color: #d0740a;
+}
+
+.fa {
+    color: white;
+}
+
+.fa:hover{
+    color: #d0740a;
+/*FONCTIONNE sur chromes mais PAS sur firefox A CHERCHER*/
+}
+
+#positionFormulaire{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TROISinputs{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#UNinput{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 10px;
+}
+
+input{
+    width: 374px;
+    height: 40px;
+    border: none;
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+textarea{
+    width: 374px;
+    height: 200px;
+    border: none;
+    background-color: #cccccc;
+    margin-left: 0px;
+    padding: 10px;
+    resize: none;
+}
+
+#boutonSubmit{
+    width: 80px;
+    height: 30px;
+    background-color: none;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    display: block;
+    margin : auto;
+    transition: 1s all;
+}
+#boutonSubmit:hover{
+    background-color: darkorange;
+}
+
+footer{
+    width: 100%;
+    margin: 0;
+    background-color: #272626;
+}
+
+#positionFooter{
+    width: 80%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#positionContact{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    margin: 10px;
+}
+
+#copyright{
+    text-align: center;
+    padding: 30px;
+}
+}

@@ -1,0 +1,12 @@
+body{
+    color: black;
+    background: white;
+    background-image: none;
+    text-decoration: none;
+    @media (orientation: portrait)
+    {
+        body{
+            background-color: lightsteelblue;
+        }
+    }
+}
